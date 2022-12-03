@@ -25,4 +25,8 @@ while True:
         
 
     cv2.imshow('Snake game', frame)
-    cv2.waitKey(1)
+    key = cv2.waitKey(1)
+    if key == ord('r'):
+        game.gameOver = False
+        game.score = 0
+        
